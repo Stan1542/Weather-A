@@ -30,6 +30,8 @@ const createWeatherCard = (cityName, weatherItem, index) => {
       </li>`;
    }
 
+
+  
 }
 
 const getWeatherInformation = (cityName, lat, lon) => {
@@ -68,6 +70,7 @@ const getWeatherInformation = (cityName, lat, lon) => {
       });
 }
 
+
 const getCityCoordinates = () => {
    const cityName = cityInput.value.trim(); //Get user entered city name and remove extra spaces
 
@@ -88,6 +91,7 @@ const getCityCoordinates = () => {
 
 }
 
+
 const getUserCoordinates = () => {
     navigator.geolocation.getCurrentPosition(
       position => {
@@ -102,7 +106,7 @@ const getUserCoordinates = () => {
       alert("An error occurred while fetching the city!");
    });
       },
-      error => { //Show alert if the user denied the location permission 
+      error => { //Show alert if the user denied th
          if(error.code === error.PERMISSION_DENIED){
             alert("Geolocation request denied. Please reset location to grand access again.")
          }
