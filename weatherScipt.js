@@ -30,8 +30,6 @@ const createWeatherCard = (cityName, weatherItem, index) => {
       </li>`;
    }
 
-
-  
 }
 
 const getWeatherInformation = (cityName, lat, lon) => {
@@ -70,7 +68,6 @@ const getWeatherInformation = (cityName, lat, lon) => {
       });
 }
 
-
 const getCityCoordinates = () => {
    const cityName = cityInput.value.trim(); //Get user entered city name and remove extra spaces
 
@@ -90,7 +87,6 @@ const getCityCoordinates = () => {
    });
 
 }
-
 
 const getUserCoordinates = () => {
     navigator.geolocation.getCurrentPosition(
